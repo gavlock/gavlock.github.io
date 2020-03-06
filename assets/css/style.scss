@@ -7,8 +7,28 @@
     content: "\201C";
 }
 
-.markdown-body abstract blockquote:before {
+.markdown-body abstract {
+    @extend blockquote;
+    display: block;
+}
+
+.markdown-body abstract:before {
     content: "";
 }
 
+.markdown-body takeaway {
+    @extend abstract;
+}
 
+.highlighter-rouge {
+    background-color: #eee;
+    padding: 0.5ex;
+    border-radius: 0.5ex;
+}
+
+.twitter-handle {
+    background-image: url(/assets/Twitter_Logo_Blue.svg);
+    background-repeat: no-repeat;
+    padding: 4px;
+    padding-left: 3ex;
+}
