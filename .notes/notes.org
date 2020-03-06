@@ -1,0 +1,3 @@
+* Tags
+** TODO Create elisp function to generate tag page files
+** TODO Auto-generate tag page files whenever a post or draft is saved
