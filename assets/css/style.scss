@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.markdown-body blockquote:before {
+    content: "\201C";
+}
+
+.markdown-body abstract blockquote:before {
+    content: "";
+}
+
+
