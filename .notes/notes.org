@@ -1,7 +1,8 @@
 * To do
 ** Misc
 *** DONE Choose a name. gavlock? lockg? normalize it across platforms (chose gavlock & gavlock.dev)
-*** ACTIVE transfer github lockg -> gavlock and point gavlock.dev domain at it
+*** DONE transfer github lockg -> gavlock and point gavlock.dev domain at it
+*** TODO decide what to do with README vs index
 *** TODO Add my twitter details
 *** TODO Consider adding images
 *** TODO Decide how to handle comments. Reddit?
@@ -16,5 +17,6 @@
 *** TODO Display n most recent posts on main page
 
 ** Tags
-*** TODO Create elisp function to generate tag page files
+*** DONE Create elisp function to generate tag page files
 *** TODO Auto-generate tag page files whenever a post or draft is saved
+*** TODO Create Emacs package for tag page file code

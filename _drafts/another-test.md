@@ -1,6 +1,6 @@
 ---
 title: Another test post
-tags: [c++]
+tags: [c++, naming]
 abstract: This is the abstract for a test post
 ---
 
