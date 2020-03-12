@@ -5,12 +5,13 @@
 *** TODO decide what to do with README vs index
 *** TODO Add my twitter details
 *** TODO Consider adding images
-*** TODO Decide how to handle comments. Reddit?
+*** ACTIVE Decide how to handle comments. Disqus?
 *** TODO Consider adding a link to a post's commit history
 *** TODO Consider a peeps page, linking to peeps I follow.
 *** TODO Consider RSS and/or Atom feeds
 
 ** Layout
+*** UPNEXT Add link to home page
 *** DONE Handle post abstracts
 *** TODO Remove download links from current-section header
 *** DONE Layout post dates on main page and post pages

@@ -24,24 +24,24 @@ is or what it does, right? So when does naming become hard?
 
 Both of these problems are bigger than naming. As important as naming
 is --- and it *is* important --- ensuring that each piece of code has
-a *single*, *well understood* responsibily is more important. Good
+a *single*, *well understood* responsibility is more important. Good
 architecture reduces bugs, improves maintainability and testability,
 and (as a free side-effect) makes choosing names easier.
 
-Just to clarify, this post is not about naming *conventions*. If you
+Just to clarify, I'm not talking about naming *conventions*. If you
 need to write a predicate that indicates whether or not an invoice has
 been paid, you might call it `paidp` in Common Lisp, `paid?` in Scheme
 or `isPaid` in Haskell. The *decoration* of the word "paid" is part of
 your coding convention --- and the only advice I'll give regarding
 that is (1) Have a convention, and (2) Follow it! What we're talking
-about here is the choice of the word "paid" iteslf.
+about here is the choice of the word "paid" itself.
 
 Looking at the first problem, when you don't know what real-world
 concept a class models, or what a function is supposed to do, naming
 it will be difficult --- but writing and testing it effectively will
 be impossible. This might sound blindingly obvious (at least, I hope
 it does), but too often we see developers diving into code before
-understanding its requirements, or how to meet those rquirements, all
+understanding its requirements, or how to meet those requirements, all
 in the name of "exploratory programming". They confuse *"I know what I
 need to do, but not yet how to do it,"* with *"I don't yet know what I
 need to do."*
