@@ -3,7 +3,7 @@ layout: default
 ---
 <h1>Tag: {{ page.tag }}</h1>
 
-<ul>
+<ul class="post-list">
   {% for post in site.tags[page.tag] %}
   {%   include post-stub.snippet.md %}
   {% endfor %}

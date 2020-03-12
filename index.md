@@ -2,7 +2,7 @@
 
 ### Tags
 
-<ul>
+<ul class="tag-list">
   {% for tag in site.tags %}
     <li>
 		<a href="/tags/{{ tag[0] }}/">{{ tag[0] }}</a>
@@ -18,7 +18,7 @@
 
 ### Posts
 
-<ul>
+<ul class="post-list">
   {% for post in site.posts %}
   {%   include post-stub.snippet.md %}
   {% endfor %}

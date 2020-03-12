@@ -7,9 +7,14 @@
     content: "\201C";
 }
 
+.markdown-body ul {
+    padding: 0 3em;
+}
+
 .markdown-body abstract {
     @extend blockquote;
     display: block;
+    padding: 0 1.5em;
 }
 
 .markdown-body abstract:before {
@@ -31,4 +36,51 @@
     background-repeat: no-repeat;
     padding: 4px;
     padding-left: 3ex;
+}
+
+.post-list {
+    .post {
+
+	.title {
+	    font-size: x-large;
+	}
+	
+	time {
+	    display: block;
+	    float: right;
+	    font-size: small;
+	}
+
+	abstract {
+	    border-width: thin;
+	    margin-left: 2em;
+	    margin-right: 2em;
+	    margin-top: 0.5em;
+	    margin-bottom: 0;
+	    padding: 0 1em;
+	}
+
+	hr {
+	    margin: 5ex 0;
+	    border-width: 2px;
+	}
+
+	p, takeaway {
+	    text-align: justify;
+	}
+    }
+}
+
+article.markdown-body {
+    .pubdate {
+	float: left;
+    }
+
+    .tags {
+	float: right;
+    }
+
+    .title {
+	clear: both;
+    }
 }
