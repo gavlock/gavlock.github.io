@@ -1,4 +1,8 @@
 title: gavlock
 description: Musings on things programming, AI and other.
+
+url: https://gavlock.dev
+production-url: https://gavlock.dev
+
 theme: jekyll-theme-time-machine
 permalink: pretty
