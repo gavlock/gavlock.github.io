@@ -1,6 +1,9 @@
 <li class="post">
 	<a class="title" href="{{ post.url }}">{{ post.title }}</a>
 	<time datetime="{{ post.date | date: '%F' }}">{{ post.date | date_to_long_string }}</time>
+	{% if site.show-disqus-comment-counts %}
+	<a class="comment-count" href="{{ post.url }}" data-disqus-identifier="{{ post.id }}"></a>
+	{% endif %}
 	<abstract>{{ post.abstract }}</abstract>
 	<p>
 		{{ post.content | markdownify | strip_html | truncatewords: 40 }}

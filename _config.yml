@@ -6,3 +6,4 @@ production-url: https://gavlock.dev
 
 theme: jekyll-theme-time-machine
 permalink: pretty
+show-disqus-comment-counts: false

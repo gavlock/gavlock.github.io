@@ -23,3 +23,7 @@
   {%   include post-stub.snippet.md %}
   {% endfor %}
 </ul>
+
+{% if site.show-disqus-comment-counts %}
+{% include disqus-comment-count.snippet.md %}
+{% endif %}
