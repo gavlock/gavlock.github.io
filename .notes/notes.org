@@ -1,4 +1,8 @@
 * To do
+:PROPERTIES:
+:VISIBILITY: all
+:END:
+
 ** Misc
 *** DONE Choose a name. gavlock? lockg? normalize it across platforms (chose gavlock & gavlock.dev)
 *** DONE transfer github lockg -> gavlock and point gavlock.dev domain at it
@@ -9,16 +13,24 @@
 *** TODO Consider adding a link to a post's commit history
 *** TODO Consider a peeps page, linking to peeps I follow.
 *** TODO Consider RSS and/or Atom feeds
+*** ACTIVE Add Google analytics
 
 ** Layout
+*** TODO Responsive design
 *** UPNEXT Add link to home page
 *** DONE Handle post abstracts
 *** TODO Remove download links from current-section header
 *** DONE Layout post dates on main page and post pages
 *** TODO Layout tags in a sidebar of the main page
 *** TODO Display n most recent posts on main page
+*** TODO Next and Previous links
+see [https://www.bytedude.com/jekyll-previous-and-next-posts/]
+and [http://stories.upthebuzzard.com/jekyll_notes/2017-02-19-prev-and-next-within-a-jekyll-collection.html]
 
 ** Tags
 *** DONE Create elisp function to generate tag page files
 *** TODO Auto-generate tag page files whenever a post or draft is saved
 *** TODO Create Emacs package for tag page file code
+
+** Categories
+*** TODO Consider using categories and breadcrumbs

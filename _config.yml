@@ -7,3 +7,4 @@ production-url: https://gavlock.dev
 theme: jekyll-theme-time-machine
 permalink: pretty
 show-disqus-comment-counts: false
+google-analytics-id: UA-160765326-1
