@@ -13,7 +13,8 @@
 *** TODO Consider adding a link to a post's commit history
 *** TODO Consider a peeps page, linking to peeps I follow.
 *** TODO Consider RSS and/or Atom feeds
-*** ACTIVE Add Google analytics
+*** DONE Add Google analytics
+- add privacy and cookies policies for Google Analytics and Disqus
 
 ** Layout
 *** TODO Responsive design
