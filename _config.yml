@@ -2,9 +2,11 @@ title: gavlock
 description: Musings on things programming, AI and other.
 
 url: https://gavlock.dev
-production-url: https://gavlock.dev
+production_url: https://gavlock.dev
+google-analytics-id: UA-160765326-1
 
 theme: jekyll-theme-time-machine
 permalink: pretty
-show-disqus-comment-counts: false
-google-analytics-id: UA-160765326-1
+show_downloads: false
+show_current_section_header: false
+show_disqus_comment_counts: false

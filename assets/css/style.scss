@@ -3,28 +3,38 @@
 
 @import "{{ site.theme }}";
 
-.markdown-body blockquote:before {
-    content: "\201C";
+header {
+    .title {
+	a, a:hover {
+	    color: black;
+	}
+    }
 }
 
-.markdown-body ul {
-    padding: 0 3em;
-}
+.markdown-body {
+    blockquote:before {
+	content: "\201C";
+    }
 
-.markdown-body abstract {
-    @extend blockquote;
-    display: block;
-    padding: 0 1.5em;
-}
+    ul {
+	padding: 0 3em;
+    }
 
-.markdown-body abstract:before {
-    content: "";
-}
+    abstract {
+	@extend blockquote;
+	display: block;
+	padding: 0 1.5em;
+    }
 
-.markdown-body takeaway {
-    @extend abstract;
-    margin-top: 3ex;
-    margin-bottom: 5ex;
+    abstract:before {
+	content: "";
+    }
+
+    takeaway {
+	@extend abstract;
+	margin-top: 3ex;
+	margin-bottom: 5ex;
+    }
 }
 
 .highlighter-rouge {
@@ -88,6 +98,15 @@ article.markdown-body {
 
     .title {
 	clear: both;
+    }
+}
+
+footer .owner {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+	margin:0 ;
     }
 }
 

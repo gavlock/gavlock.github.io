@@ -24,6 +24,6 @@
   {% endfor %}
 </ul>
 
-{% if site.show-disqus-comment-counts %}
+{% if site.show_disqus_comment_counts %}
 {% include disqus-comment-count.snippet.md %}
 {% endif %}
