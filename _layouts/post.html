@@ -18,6 +18,10 @@ layout: default
 </abstract>
 {% endif %}
 
+{% if page.image %}
+<img class="post-image" src="/assets/{{ page.image }}"/>
+{% endif %}
+
 {{ content }}
 
 {% include disqus-comments.snippet.md %}

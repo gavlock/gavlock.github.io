@@ -30,6 +30,12 @@ header {
 	content: "";
     }
 
+    .post-image {
+	display: block;
+	margin: auto;
+	padding: 0 1em;
+    }
+
     takeaway {
 	@extend abstract;
 	margin-top: 3ex;

@@ -8,7 +8,7 @@
 *** DONE transfer github lockg -> gavlock and point gavlock.dev domain at it
 *** TODO decide what to do with README vs index
 *** DONE Add my twitter details
-*** TODO Consider adding images
+*** ACTIVE Consider adding images
 *** DONE Decide how to handle comments. Disqus?
 *** TODO Consider adding a link to a post's commit history
 *** TODO Consider a peeps page, linking to peeps I follow.
@@ -17,7 +17,7 @@
 - add privacy and cookies policies for Google Analytics and Disqus
 
 ** Layout
-*** TODO Responsive design
+*** UPNEXT Responsive design
 *** DONE Add link to home page
 *** DONE Handle post abstracts
 *** DONE Disable download links and remove current-section header
