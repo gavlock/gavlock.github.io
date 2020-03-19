@@ -10,3 +10,6 @@ permalink: pretty
 show_downloads: false
 show_current_section_header: false
 show_disqus_comment_counts: false
+
+plugins:
+  - jekyll-sitemap
