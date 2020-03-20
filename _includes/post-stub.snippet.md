@@ -4,7 +4,7 @@
 	{% if site.show_disqus_comment_counts %}
 	<a class="comment-count" href="{{ post.url }}" data-disqus-identifier="{{ post.id }}"></a>
 	{% endif %}
-	<abstract>{{ post.abstract }}</abstract>
+	<abstract>{{ post.excerpt }}</abstract>
 	<p>
 		{{ post.content | markdownify | strip_html | truncatewords: 40 }}
 		<a class="read-more"  href="{{ post.url }}">read more</a>
