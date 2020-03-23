@@ -7,7 +7,12 @@
 	<abstract>{{ post.excerpt }}</abstract>
 	<p>
 		{{ post.content | markdownify | strip_html | truncatewords: 40 }}
-		<a class="read-more"  href="{{ post.url }}">read more</a>
+		<a class="read-more"  href="{{ post.url }}">
+			{% if post.image %}
+			<img src="/assets/{{ post.image }}"/>
+			{% endif %}
+			read more
+		</a>
 	</p>
 	{% if forloop.last == false %}
 	<hr/>
