@@ -6,7 +6,7 @@
   gtag('js', new Date());
 
   gtag('config', '{{ site.google-analytics-id }}', {
-	'page_title': '{{ page.title }},
-	'page_path': '{{ page.url }}
+	'page_title': '{{ page.title }}',
+	'page_path': '{{ page.url }}'
 	});
 </script>
