@@ -1,7 +1,15 @@
 ---
 ---
 
+$main-font-family: 'Baloo 2', 'Verdana', 'Tahoma', 'Arial', 'Helvetica', sans-serif;
+$title-font-family: 'Special Elite', 'Verdana', 'Tahoma', 'Arial', 'Helvetica', sans-serif;
+
 @import "{{ site.theme }}";
+
+body {
+    font-family: $main-font-family;
+    font-size: 15pt;
+}
 
 header {
     .title {
@@ -12,6 +20,12 @@ header {
 }
 
 .markdown-body {
+    
+    h1.title {
+	font-family: $title-font-family;
+	font-style: normal;
+    }
+    
     blockquote:before {
 	content: "\201C";
     }
@@ -24,6 +38,8 @@ header {
 	@extend blockquote;
 	display: block;
 	padding: 0 1.5em;
+	font-family: $main-font-family;
+	font-size: larger;
     }
 
     abstract:before {
@@ -40,6 +56,8 @@ header {
 	@extend abstract;
 	margin-top: 3ex;
 	margin-bottom: 5ex;
+	font-family: $main-font-family;
+	font-size: large;
     }
 }
 
@@ -58,6 +76,8 @@ header {
 
 .post-list {
     .post {
+	font-size: initial;
+	line-height: 1.1;
 
 	.title {
 	    font-size: x-large;
@@ -75,11 +95,11 @@ header {
 
 	abstract {
 	    border-width: thin;
-	    margin-left: 2em;
-	    margin-right: 2em;
+	    margin-left: 1em;
+	    margin-right: 1em;
 	    margin-top: 0.5em;
 	    margin-bottom: 0;
-	    padding: 0 1em;
+	    padding: 0 0.5em;
 	}
 
 	hr {
@@ -104,6 +124,7 @@ article.markdown-body {
 
     .title {
 	clear: both;
+	text-wrap: balance;
     }
 }
 

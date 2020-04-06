@@ -4,6 +4,10 @@
 :END:
 
 ** Misc
+*** TODO Twitter card metadata
+See:
+https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary
+and: https://cards-dev.twitter.com/validator
 *** DONE Choose a name. gavlock? lockg? normalize it across platforms (chose gavlock & gavlock.dev)
 *** DONE transfer github lockg -> gavlock and point gavlock.dev domain at it
 *** TODO decide what to do with README vs index
