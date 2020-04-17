@@ -13,3 +13,6 @@ show_disqus_comment_counts: false
 
 plugins:
   - jekyll-sitemap
+
+sass:
+  sass_dir: ./assets/css

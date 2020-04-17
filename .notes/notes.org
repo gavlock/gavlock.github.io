@@ -21,7 +21,10 @@ and: https://cards-dev.twitter.com/validator
 - add privacy and cookies policies for Google Analytics and Disqus
 
 ** Layout
-*** UPNEXT Responsive design
+*** ACTIVE Responsive design
+*** ACTIVE Handles post series
+*** TODO Add language display to code blocks https://www.bytedude.com/jekyll-syntax-highlighting-and-line-numbers/#language-display
+*** TODO Improve Lisp code highlighting. maybe https://github.com/m-cat/nimbus-pygments
 *** DONE Add link to home page
 *** DONE Handle post abstracts
 *** DONE Disable download links and remove current-section header
