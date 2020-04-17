@@ -40,8 +40,7 @@ function ...
 ## The identity function
 
 Because every function in the lambda calculus takes one argument, the
-next simplest thing we could do is to just return that
-argument.  
+next simplest thing we could do is to just return that argument.
 `(lambda (a) a)`
 
 Let's give it a try:

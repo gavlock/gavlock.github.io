@@ -6,6 +6,11 @@ $title-font-family: 'Special Elite', 'Verdana', 'Tahoma', 'Arial', 'Helvetica', 
 
 @import "{{ site.theme }}";
 
+.debug {
+    border: medium red solid;
+    padding: 0.5em;
+}
+
 body {
     font-family: $main-font-family;
     font-size: 15pt;
