@@ -4,6 +4,7 @@ tags: [naming]
 excerpt: "Is good naming inherently hard - or is it a design smell?<br/>
   Does good design beget good naming?"
 image: Bad naming.svg
+redirect_from: /2020/03/12/naming-is-hard-considered-harmful/
 ---
 
 Let's start by taking as given that good naming is important. Many

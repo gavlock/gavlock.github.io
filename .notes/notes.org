@@ -23,6 +23,7 @@ and: https://cards-dev.twitter.com/validator
 ** Layout
 *** ACTIVE Responsive design
 *** ACTIVE Handles post series
+*** DONE consider URL schema - changed to /blog/x and /blog/<series>/x
 *** TODO Add language display to code blocks https://www.bytedude.com/jekyll-syntax-highlighting-and-line-numbers/#language-display
 *** TODO Improve Lisp code highlighting. maybe https://github.com/m-cat/nimbus-pygments
 *** DONE Add link to home page

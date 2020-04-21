@@ -6,13 +6,14 @@ production_url: https://gavlock.dev
 google-analytics-id: UA-160765326-1
 
 theme: jekyll-theme-time-machine
-permalink: pretty
+permalink: /blog/:title
 show_downloads: false
 show_current_section_header: false
 show_disqus_comment_counts: false
 
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 sass:
   sass_dir: ./assets/css
