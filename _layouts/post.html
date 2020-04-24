@@ -13,10 +13,10 @@ layout: default
 
 <h1 class="title balance-text">{{ page.title }}</h1>
 
-{% if page.excerpt %}
-<abstract>
-  {{ page.excerpt }}
-</abstract>
+{% if page.teaser %}
+<teaser>
+  {{ page.teaser }}
+</teaser>
 {% endif %}
 
 {% if page.image %}

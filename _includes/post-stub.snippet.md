@@ -9,9 +9,13 @@
 			<img src="/assets/{{ post.image }}"/>
 		{% endif %}
 	</a>
-	<abstract>{{ post.excerpt }}</abstract>
-	<p>
-		{{ post.content | markdownify | strip_html | truncatewords: 40, "&nbsp;&hellip;" }}
+	<teaser>{{ post.teaser }}</teaser>
+	<p class="excerpt">
+		{% if post.stub %}
+			{{ post.stub | markdownify | strip_html }} &nbsp;&hellip;
+		{% else %}
+			{{ post.content | markdownify | strip_html | truncatewords: 40, "&nbsp;&hellip;" }}
+		{% endif %}
 	</p>
 	<a class="read-more"  href="{{ post.url }}">read more</a>
 	{% if forloop.last == false %}

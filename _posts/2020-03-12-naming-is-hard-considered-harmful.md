@@ -1,7 +1,7 @@
 ---
 title: "“Naming is hard” considered harmful"
 tags: [naming]
-excerpt: "Is good naming inherently hard - or is it a design smell?<br/>
+teaser: "Is good naming inherently hard - or is it a design smell?<br/>
   Does good design beget good naming?"
 image: Bad naming.svg
 redirect_from: /2020/03/12/naming-is-hard-considered-harmful/

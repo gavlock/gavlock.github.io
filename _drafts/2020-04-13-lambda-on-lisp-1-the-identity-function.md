@@ -4,8 +4,12 @@ index: 1
 permalink: /blog/lambda-on-lisp/1-the-identity-function
 title: Lambda on Lisp - The identity function
 tags: [lambda-calculus, lisp]
-excerpt: XXX
-image: Lambda xxx.svg
+teaser: "Constant and Identity: &ldquo;These are not the symbol-values you're looking for.&rdquo;"
+stub: "Possibly the simplest type of function in Lisp is one taking no
+arguments and returning a constant value.  The returned value could be
+&ldquo;nothing&rdquo; as in `(lambda () nil)`, or any other constant value,
+`(lambda () 42)`"
+image: lambda-on-lisp-identity.svg
 ---
 
 [Video: From the beginning to the discussion of lambda syntax at 1m50s](https://www.youtube.com/watch?v=3VQ382QG-y4&t=1s)
@@ -40,13 +44,13 @@ function ...
 
 ## The identity function
 
-Because every function in the lambda calculus takes one argument, the
-next simplest thing we could do is to just return that argument.
-`(lambda (a) a)`
+Because every function in the lambda calculus takes exactly one
+argument, the next simplest thing we could do is to just return that
+argument: `(lambda (a) a)`
 
 Let's give it a try:
 
-```console?lang=lisp&prompt=>&comments=true
+```console?lang=lisp&prompt=>comments=false
 CL-USER> ((lambda (a) a) 1)
 1
 CL-USER> ((lambda (a) a) 2)

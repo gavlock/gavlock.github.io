@@ -39,7 +39,7 @@ header {
 	padding: 0 3em;
     }
 
-    abstract {
+    teaser {
 	@extend blockquote;
 	display: block;
 	padding: 0 1.5em;
@@ -47,13 +47,14 @@ header {
 	font-size: larger;
     }
 
-    abstract:before {
+    teaser:before {
 	content: "";
     }
 
     .post-image {
 	display: block;
 	margin: auto;
+	margin-bottom: 1ex;
 	padding: 0 1em;
     }
 
@@ -69,7 +70,7 @@ header {
     }
 
     takeaway {
-	@extend abstract;
+	@extend teaser;
 	margin-top: 3ex;
 	margin-bottom: 5ex;
 	font-family: $main-font-family;
@@ -113,7 +114,7 @@ header {
 	    display: block;
 	}
 
-	abstract {
+	teaser {
 	    border-width: thin;
 	    margin-left: 1em;
 	    margin-right: 1em;

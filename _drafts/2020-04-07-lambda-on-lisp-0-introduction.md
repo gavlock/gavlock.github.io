@@ -4,16 +4,20 @@ index: 0
 permalink: /blog/lambda-on-lisp/0-introduction
 title: Exploring the lambda calculus using Common Lisp
 tags: [lambda-calculus, lisp]
-excerpt: A Lisper's commentary on the "Fundamentals of Lambda Calculus & Functional Programming in Javascript".
-image: Lambda xxx.svg
+teaser: "A Lisper's commentary on the &ldquo;Fundamentals of Lambda Calculus & Functional Programming in Javascript&rdquo;."
+stub: "In this series we'll explore the lambda calculus and implement a
+lambda calculus syntax *on* Common Lisp. Our emphasis will be on the
+lambda calculus, with just enough Lisp to give us an environment to
+play in."
+image: lambda-on-lisp.svg
 ---
 
 ## Overview {#overview}
 
-In this series of articles we'll explore the lambda calculus and
-implement a lambda calculus syntax *on* Common Lisp. Our emphasis will
-be on the lambda calculus, with just enough Lisp to give us an
-environment to play in.
+In this series we'll explore the lambda calculus and implement a
+lambda calculus syntax *on* Common Lisp. Our emphasis will be on the
+lambda calculus, with just enough Lisp to give us an environment to
+play in.
 
 I said *on*, rather than *in*, Common Lisp because I would like to
 start with a thin-as-possible abstraction layer that transforms lambda
@@ -65,30 +69,35 @@ just as you can learn imperative programming without every hearing of
 a Turing machine; but please consider:
 
 1. *Lambda calculus is beautiful.*
+
 2. *The Turing machine and the lambda calculus are two of the purest
    forms of expressing computation that we have*. They give us ways of
    thinking about what programming languages *do* and, possibly more
    importantly, what programming languages *are*.
+   
 3. *Lambda calculus and Turing machines are two very different ways of
    thinking about computation.* At the risk of over-simplifying, Turing
    machines are the epitome of imperative programming, with their
    state, and with the machine's head stepping along the tape one
    block at a time (albeit in either direction) --- while the lambda
    calculus, consisting only of functions, offers the base model of
-   functional programming. Exploring these differences can teach us a lot.
+   functional programming. Exploring these differences can teach us a
+   lot.
+   
 4. *Lambda calculus and Turing machines are exactly the same.* OK,
    not *exactly* the same, but equivalent. The Church-Turing
    hypothesis teaches us that they are, in a sense, isomorphic. They
-   are two side of the same coin, two faces of the same Batman
-   villain. Exploring their similarities can teach us a lot.
+   are two sides of the same coin, two faces of the same Batman
+   villain. Exploring these similarities can teach us a lot.
+   
 5. *The idea that __everything__ that can be computed, can be computed
    using something as simple as the lambda calculus is mind-blowing.*
-   We'll take a look at syntax in the next article, but for now I'll
-   just mention that the entire syntax can be expressed in only three
-   rules.
+   We'll take a look at syntax soon, but for now I'll just mention
+   that the entire syntax can be expressed in only three rules.
+   
 6. *Lambda calculus is beautiful.*
 
-## Why does this article's abstract mention JavaScript? {#why-javascript}
+## Why does this article's teaser mention JavaScript? {#why-javascript}
 
 This series was inspired by a Fullstack Academy talk presented by
 Gabriel Lebec.

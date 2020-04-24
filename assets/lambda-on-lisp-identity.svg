@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg version="1.1" width="800" height="150" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=VT323");
+    </style>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4 1"/>
+      <feMerge>
+	<feMergeNode in="glow"/>
+	<feMergeNode in="glow"/>
+      </feMerge>
+    </filter>
+
+    <g id="text">
+      <text x="30" y="100" font-size="62" font-family="VT323, Monaco, Lucida Console, Courier New, Courier, monospace">
+	<tspan fill="green">CL-USER> </tspan>
+	<tspan fill="lime">[λx.x λx.x]</tspan>
+      </text>
+    </g>
+
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="1"/>
+    </filter>
+
+    <pattern id="raster" height="10" width="1" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100%" y2="0" stroke="black" stroke-width="1" opacity="1"/>
+    </pattern>
+
+  </defs>
+
+  <!-- black backround -->
+  <rect width="100%" height="100%" fill="black"/>
+
+  <!-- text: first with a blur ... -->
+  <use href="#text" style="filter: url(#glow)"/>
+  <!-- ... and again to get crisp border and to make it selectable -->
+  <use href="#text"/>
+
+  <!-- overlay black raster scan-lines without blocking selection of the text -->
+  <rect width="100%" height="100%" fill="url(#raster)" style="filter: url(#blur)" pointer-events="none"/>
+
+</svg>

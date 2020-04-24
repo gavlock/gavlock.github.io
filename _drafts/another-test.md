@@ -1,7 +1,7 @@
 ---
 title: Another test post - this time with a very long name to test layout
 tags: [c++, naming]
-excerpt: This is the abstract for a test post
+teaser: This is the teaser for a test post
 ---
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec
