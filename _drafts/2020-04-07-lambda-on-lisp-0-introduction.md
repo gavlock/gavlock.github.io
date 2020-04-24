@@ -1,6 +1,7 @@
 ---
 series: Lambda on Lisp
 index: 0
+permalink: /blog/lambda-on-lisp/0-introduction
 title: Exploring the lambda calculus using Common Lisp
 tags: [lambda-calculus, lisp]
 excerpt: A Lisper's commentary on the "Fundamentals of Lambda Calculus & Functional Programming in Javascript".

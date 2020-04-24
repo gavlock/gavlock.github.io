@@ -1,5 +1,9 @@
 {% if page.series %}
 
+	{% assign series_toc = site.pages | where: "layout", "series-toc"
+	                                  | where: "series", page.series 
+                                      | first %}
+										
 	{% assign series_posts = site.posts | where: "series", page.series 
                                         | sort: "index" %}
 	{% assign series_length = series_posts | size %}
@@ -20,7 +24,34 @@
 		{% endif %}
 	{% endfor %}
 	
-	<div class="debug">
+<div class="series-post-header">
+	<div class="series">
+		This article is part of the
+		<a href="{{ series_toc.url }}">{{ page.series }}</a>
+		series.
+	</div>
+	
+	<div class="links">
+	
+		{% if previous_post %}
+		<div class="previous">
+			<a href="{{ previous_post.url }}">
+				{{ previous_post.title }}
+			</a>
+		</div>
+		{% endif %}
+	
+		{% if next_post %}
+		<div class="next">
+			<a href="{{ next_post.url }}">
+				{{ next_post.title }}
+			</a>
+		</div>
+		{% endif %}
+	
+	</div>
+	
+	<!--
 		Series: {{ page.series }}
 		<br/>
 		Part: {{ page.index }} of {{ series_length }}
@@ -32,5 +63,7 @@
 		{% if next_post %}
 			Next: {{ next_post.title }}
 		{% endif %}
-	</div>
+	-->
+</div>
+	
 {% endif %}

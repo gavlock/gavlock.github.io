@@ -13,6 +13,7 @@ and: https://cards-dev.twitter.com/validator
 *** TODO decide what to do with README vs index
 *** DONE Add my twitter details
 *** ACTIVE Consider adding images
+**** decide where to place them
 *** DONE Decide how to handle comments. Disqus?
 *** TODO Consider adding a link to a post's commit history
 *** TODO Consider a peeps page, linking to peeps I follow.
@@ -22,7 +23,7 @@ and: https://cards-dev.twitter.com/validator
 
 ** Layout
 *** ACTIVE Responsive design
-*** ACTIVE Handles post series
+*** ACTIVE Handle post series
 *** DONE consider URL schema - changed to /blog/x and /blog/<series>/x
 *** TODO Add language display to code blocks https://www.bytedude.com/jekyll-syntax-highlighting-and-line-numbers/#language-display
 *** TODO Improve Lisp code highlighting. maybe https://github.com/m-cat/nimbus-pygments

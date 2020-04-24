@@ -1,8 +1,10 @@
 ---
 series: Lambda on Lisp
 index: 2
-title: Lambda on Lisp - XXX
+permalink: /blog/lambda-on-lisp/2-syntax
+title: Lambda on Lisp - Syntax
 tags: [lambda-calculus, lisp]
 excerpt: XXX
 image: Lambda xxx.svg
 ---
+

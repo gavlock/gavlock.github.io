@@ -1,13 +1,14 @@
 ---
 series: Lambda on Lisp
 index: 1
+permalink: /blog/lambda-on-lisp/1-the-identity-function
 title: Lambda on Lisp - The identity function
 tags: [lambda-calculus, lisp]
 excerpt: XXX
 image: Lambda xxx.svg
 ---
 
-[Video: From 0s to the discussion of lambda syntax at 1m50s](https://www.youtube.com/watch?v=3VQ382QG-y4&t=1s)
+[Video: From the beginning to the discussion of lambda syntax at 1m50s](https://www.youtube.com/watch?v=3VQ382QG-y4&t=1s)
 
 ## Foreshadowing the constant function {#constant-function}
 

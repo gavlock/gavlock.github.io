@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<p class="tags">Tags:
+  {% for tag in page.tags %}
+  <a href="/tags/{{ tag }}/">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
+  {% endfor%}
+</p>
+
+<h1 class="title balance-text">{{ page.title }}</h1>
+
+{% if page.excerpt %}
+<abstract>
+  {{ page.excerpt }}
+</abstract>
+{% endif %}
+
+{% if page.image %}
+<img class="post-image" src="/assets/{{ page.image }}"/>
+{% endif %}
+
+{% assign series_posts = site.posts | where: "series", page.series 
+                                    | sort: "index" %}
+
+{% for post in series_posts %}
+<div>
+  <a href="{{ post.url }}">
+    {{ post.index }}. {{ post.title }}
+  </a>
+</div>
+{% endfor %}

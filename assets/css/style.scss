@@ -146,6 +146,46 @@ article.markdown-body {
 	clear: both;
 	text-wrap: balance;
     }
+
+    .series-post-header {
+	background-color: #eee;
+	padding: 0 0.5em;
+
+	.series {
+	    text-align: center;
+	}
+
+	.links {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	    margin-top: 1ex;
+	    font-size: smaller;
+
+	    a { text-decoration: overline; }
+	}
+
+	.previous {
+	    flex-grow: 1;
+	    text-align: left;
+	    margin-right: 1em;
+
+	    a:before {
+		content: "<<";
+	    }
+	}
+
+	.next {
+	    flex-grow: 1;
+	    text-align: right;
+	    margin-left: 1em;
+
+	    a:after {
+		content: ">>";
+	    }
+	}
+
+    }
 }
 
 footer .owner {
