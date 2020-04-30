@@ -5,7 +5,7 @@
 <ul class="tag-list">
   {% for tag in site.tags %}
     <li>
-		<a href="/tags/{{ tag[0] }}/">{{ tag[0] }}</a>
+		<a href="/tags/{{ tag[0] }}">{{ tag[0] }}</a>
 		{{ tag[1] | size}}
 		{% if tag[1].size == 1 %}
 			post
