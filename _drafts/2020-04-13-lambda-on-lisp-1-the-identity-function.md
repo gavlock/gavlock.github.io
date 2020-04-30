@@ -12,7 +12,7 @@ arguments and returning a constant value.  The returned value could be
 image: lambda-on-lisp-identity.svg
 ---
 
-[Video: From the beginning to the discussion of lambda syntax at 1m50s](https://www.youtube.com/watch?v=3VQ382QG-y4&t=1s)
+[Gabriel's video: From the beginning to the discussion of lambda syntax at 1m48s](https://www.youtube.com/embed/3VQ382QG-y4?start=1&end=108&autoplay=1)
 
 ## Foreshadowing the constant function {#constant-function}
 
@@ -42,7 +42,7 @@ In the spirit of following Gabriel's video, I'll get back to the
 constant function later.  For now, we'll start with the next simplest
 function ...
 
-## The identity function
+## The identity function {#identity-function}
 
 Because every function in the lambda calculus takes exactly one
 argument, the next simplest thing we could do is to just return that
@@ -72,6 +72,8 @@ CL-USER> (I I)
 # [Condition of type UNBOUND-VARIABLE] The variable I is unbound.
 ```
 
+## The identity of identity {#identity-of-identity}
+
 If you've been working with Common Lisp long enough, that last one
 won't surprise you too much.  As I mentioned in the intro, CL is a
 Lisp-2.  It has 2 separate "namespaces" for symbol values and symbol
@@ -94,6 +96,10 @@ version of `defun` specifically for lambda functions.
 
 ```lisp
 (defmacro deflambda (sym args &body body)
+  "Defines a lambda calculus function (using Lisp's native `defun`),
+but also copies the function to `sym`'s symbol-value to give us the
+lambda calculus' value semantics in which we can refer to function ƒ
+as just `ƒ` rather than (function ƒ)` or `#'ƒ`."
   `(prog1
      (defun ,sym ,args ,@body)
      (defparameter ,sym #',sym)))
