@@ -35,7 +35,7 @@ tags directory has been created."
   "Returns a list of all posts in the blog. If INCLUDE-DRAFTS is
 non-nil, then drafts are included in the results."
   (append (if include-drafts (jklblog-draft-files blog-directory))
-	  (directory-files (jklblog-posts-directory blog-directory) t "\\.md$")))
+	  (directory-files-recursively (jklblog-posts-directory blog-directory) "\\.md$")))
 
 (defun jklblog-draft-files (blog-directory)
   "Returns a list of all drafts in the blog."
@@ -95,6 +95,7 @@ found, returns nil."
 	    "layout: tag\n"
 	    "title: \"Tag: " tag-name "\"\n"
 	    "tag: " tag-name "\n"
+	    "permalink: /tags/" tag-name "\n"
 	    "jklblog-auto-generated: true\n"
 	    "---\n")
     tag-name))
@@ -124,7 +125,7 @@ found, returns nil."
 	      )
 	    (jklblog-post-tags file))))
 
-(defun jklblog-tags-fom-all-posts (blog-directory &optional include-drafts)
+(defun jklblog-tags-from-all-posts (blog-directory &optional include-drafts)
   (let ((tag-names))
     (dolist (post (jklblog-post-files blog-directory include-drafts))
       (dolist (tag (jklblog-post-tags post))
@@ -134,7 +135,7 @@ found, returns nil."
 
 (defun jklblog-rebuild-tag-files (blog-directory &optional include-drafts)
   (let ((tag-directory (jklblog-tags-directory blog-directory))
-	(tag-names (jklblog-tags-fom-all-posts blog-directory include-drafts)))
+	(tag-names (jklblog-tags-from-all-posts blog-directory include-drafts)))
     (jklblog-clear-tag-files tag-directory)
     (dolist (tag-name tag-names)
       (jklblog-create-tag-file tag-directory tag-name))
